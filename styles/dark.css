@@ -3,10 +3,98 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
 :root.theme-dark {
+  --bg-image: url("../images/cover-image-dark.png");
+  --bg-color:#000028; 
+  --decor-color:#FF0070;  
+  --bg-decor:#FF0070;
+  --text-color: #F1B2CE;
+  --title-color-thin: #000028;
+  --title-color: #FF0070;
+  --hover-focus-color: #F1B2CE;
+}
+
+.rec-dark {
+  justify-self: end;
+  position: absolute;
+  font-size: 18px;
+  left: 91vw;
+  top: 1vh;
+  margin-top: 0px;
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--decor-color);
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.rec-dark::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 1vh;
+  left: 3vw;
+  /* margin-left: 10px; */
+  background-color: var(--decor-color); 
+  border-radius: 50%;
+  filter: blur(2px);
+}
+
+
+.title-decor {
+background-color: var(--bg-decor);
+color: #000028;
+}
+ .content-text {
+  color: var(--main-text-color);
+}
+
+.thin-font {
+  color:var(--title-color-thin);
+}
+
+.link-color {
+  text-shadow: 2px 1px 0 var(--decor-color);
+}
+.link-color:hover {
+text-decoration: underline;
+color: var(--hover-focus-color);
+}
+.link-color:focus-visible{
+  outline: var(--hover-focus-color) 1px solid;
+}
+
+@media (min-width: 768px) {
+  .rec-dark {
+    left: 91vw;
+    top: 1vh;
+  }
+  .rec-dark::after {  
+    top: 1vh;
+    left: 3vw;
+  }
+
+
+}
+
+@media (min-width: 1024px) {
+  .rec-dark {
+    left: 91vw;
+    top: 1vh;
+  } 
+
+  .rec-dark::after {  
+    top: 1vh;
+    left: 3vw;
+
+  } 
+  
+  }
+
+
+
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-}
