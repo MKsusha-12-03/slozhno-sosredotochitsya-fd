@@ -2,9 +2,9 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-
 background-color: var(--bg-color); 
 margin-bottom: 0px;
+background-attachment: fixed;
 /* background-image: var(--bg-image); 
 background-repeat: no-repeat;
 background-position: center;
@@ -12,12 +12,7 @@ background-attachment: fixed;
 background-size: cover;
 /* position: relative; */
 }
-/*.title-deror{
-background-color: var(--bg-decor);
-}
-.link-color{
-  color: var(--bg-decor)
-}*/
+
 .header {
 background-image: var(--bg-image);
 background-repeat: no-repeat;
@@ -31,8 +26,8 @@ display: grid;
 grid-template-rows: 1fr 1fr 1fr;
 align-items: start;
 justify-items: end;
-
 }
+
 .decorated-zone::before {
   content: "";
   position: absolute;
@@ -42,8 +37,8 @@ justify-items: end;
   height: 25px;
   border-top: 1px solid var(--decor-color);
   border-right: 1px solid var(--decor-color);
-
 }
+
 .decorated-zone::after {
   content: "";
   position: absolute;
@@ -78,10 +73,12 @@ margin-top: 66px;
 .header__theme-menu-button_active {
   border: 2px solid var(--button-text-color);
 }
+
 .header__theme-menu-button:hover ,
 .header__theme-menu-button:focus {
 border: 1px solid var(--button-text-color);
 }
+
 .header__theme-menu-button:focus-visible {
   text-decoration: underline solid var(--button-text-color);
 }
@@ -101,6 +98,7 @@ margin-left: 10px;
 margin-bottom:0px;
 letter-spacing: 4px; 
 }
+
 .header__subtitle {
 font-family: var(--header-font-family);
 background-color: var(--header-subtitle-bg-color);
@@ -194,8 +192,8 @@ line-height: 23.4px;
 
 }
 
-.galery-image {
-  max-width: 355px;
+.galery img {
+  max-width: 100%;
   object-fit: cover;
   height: auto;
 }
@@ -286,6 +284,7 @@ line-height: 23.4px;
     margin-right: 10px; 
     margin-bottom: 0px;
   }
+
   .content-text {
     grid-column: 2;
     margin-top: 10px;
@@ -293,15 +292,15 @@ line-height: 23.4px;
     margin-left: 20px;
   }
 
-  .main-section:nth-child(2){
+  .main-section:nth-child(2) {
     display: inline-block;
     margin-top: 55px;
-
   }
  
   .main-section:nth-child(2) .title {
    max-width: 220px;
   }
+
  .main-section:nth-child(2) .main__subtitle {
    margin-left: 15px;
   }
@@ -330,7 +329,7 @@ line-height: 23.4px;
     word-spacing: 4px;
     }
 
-   .main-section:nth-child(3) .thin-font{
+   .main-section:nth-child(3) .thin-font {
     grid-column: 2;
     margin-top: 5px;
     margin-left: 18px;
@@ -339,11 +338,11 @@ line-height: 23.4px;
    }
 
  .main-section:nth-child(3) .content-text {
-      margin-top: 0px;
-      margin-bottom: 12px;
-    }
+    margin-top: 0px;
+    margin-bottom: 12px;
+ }
 
-     .galery img {
+  .galery img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -360,16 +359,20 @@ line-height: 23.4px;
  .galery-sea {
   grid-column: span 2;
  }
+
  .galery-ice-cream {
    grid-row: span 3;
  }
+
   .galery-tape {
   grid-row: span 3;
  }
+
  .galery-street {
   grid-column: span 2;
  }
- .main-section:last-of-type{
+
+ .main-section:last-of-type {
   margin-top: 20px;
   display: inline-block;
  }
@@ -377,9 +380,10 @@ line-height: 23.4px;
  .main-section:last-of-type .main__subtitle {
   grid-column: 1;
  }
+
 }
 
-@media (width >= 1024px ){
+@media (width >= 1024px ) {
 .header {
   display: grid;
  grid-template-rows: 1fr 1fr 1fr
@@ -457,7 +461,8 @@ font-size: 157px;
   max-width: unset;
   margin-bottom: 0px;
 }
-.main-section:nth-child(2) .main__subtitle{
+
+.main-section:nth-child(2) .main__subtitle {
   margin-top: 20px;
 }
 .main-section:nth-child(2) .content-text {
