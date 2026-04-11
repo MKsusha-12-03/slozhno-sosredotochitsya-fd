@@ -10,11 +10,11 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-image: url("../images/cover-image-light.png");
-   --bg-color: #fff; 
-    --header-logo-color: #FFC2E6;
+  --bg-color: #fff; 
+  --header-logo-color: #FFC2E6;
   --header-subtitle-bg-color: #FF8DCB;
   --header-subtitle-color: #353430;
-   --button-text-color:#353430;
+  --button-text-color:#353430;
   --title-txt-color: #353430;
   --decor-color:#353430;
   --bg-decor:#FF8DCB;
@@ -26,9 +26,29 @@
   --footer-logo-color: #FFC2E6;
 }
 
-.rec-dark {
+/* .rec-dark { 
   display: none;
-}
-.rec-dark::after {
+} */
+/* .rec-dark::after { 
   display: none;
+ } */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-image: url("../images/cover-image-light.png");
+  --bg-color: #fff; 
+  --header-logo-color: #FFC2E6;
+  --header-subtitle-bg-color: #FF8DCB;
+  --header-subtitle-color: #353430;
+  --button-text-color:#353430;
+  --title-txt-color: #353430;
+  --decor-color:#353430;
+  --bg-decor:#FF8DCB;
+  --main-text-color: #353430;
+  --title-color-thin:#353430;
+  --title-color: #FF8DCB ;
+  --hover-focus-color: #FF8DCB;
+  --accent-color: #FF8DCB ;
+  --footer-logo-color: #FFC2E6;
+  }
 }
