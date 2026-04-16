@@ -24,6 +24,7 @@
   --hover-focus-color: #FF8DCB;
   --accent-color: #FF8DCB ;
   --footer-logo-color: #FFC2E6;
+  --red-dark: none;
 }
 
 /* .rec-dark { 
@@ -50,5 +51,17 @@
   --hover-focus-color: #FF8DCB;
   --accent-color: #FF8DCB ;
   --footer-logo-color: #FFC2E6;
+  --red-dark: none;
   }
+/* .red-dark { 
+  display: none;
 }
+
+.red-dark::after {
+  content: none;
+  display: none; 
+ } */
+
+}
+
+
